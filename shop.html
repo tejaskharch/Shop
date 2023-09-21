@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MyZon</title>
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src=
+        "https://code.jquery.com/jquery-3.6.0.min.js ">
+    </script>
+    <link rel="stylesheet" href="doc.css" />
+    <script src="script.js"></script>
+   
+    <style>
+        html,
+        body {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          font-family: "Helvetica", sans-serif;
+        }
+        img {
+          max-width: 100%;
+        }
+        .slider-container {
+            margin-top:2.5% ;
+            margin-left: 10%;
+          height: 60%;
+          width: 80%;
+          position: relative;
+          overflow: hidden;
+          text-align: center;
+          
+        }
+        .menu {
+          position: absolute;
+          left: 0;
+          z-index: 900;
+          width: 100%;
+          bottom: 0;
+        }
+        .menu label {
+          cursor: pointer;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: #fff;
+          border-radius: 50px;
+          margin: 0 0.2em 1em;
+        }
+        .menu label:hover,
+        .menu label:focus {
+          background: #1c87c9;
+        }
+        .slide {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          z-index: 10;
+          padding: 8em 1em 0;
+          background-size: cover;
+          background-position: 50% 50%;
+          transition: left 0s 0.75s;
+        }
+        [id^="slide"]:checked + .slide {
+          left: 0;
+          z-index: 100;
+          transition: left 0.65s ease-out;
+        }
+        .slide-1 {
+          background-image: url("discount1.png");
+        }
+        .slide-2 {
+          background-image: url("discount2.png");
+        }
+        .slide-3 {
+          background-image: url("discount3.png");
+        }
+        .add_to_cart{
+        
+        
+        }
+        .cart-img{
+             margin-left: 90%;
+             margin-top: -150px;
+
+          }
+        
+       
+          
+          
+          
+        
+        
+        .cart-img:hover{
+              height: 35px;
+              width: 40px;
+              transition: 500ms;
+
+          }
+      </style>
+</head>
+<body>
+    <div class="header">
+        <a href="shop.html"><img src="myzon.png" height="100px" alt=""></a>
+        
+
+    </div>
+    <div class="header-nav">
+        <div class="home">
+            <button class="home-btn"><img src="home.png" height="70px" width="70px" ><br><a href="#">Home</a></button>
+            <div class="home-btn-ddn"><br><br>
+                <a href="cookware.html">Cookware</a><br><br>
+                <a href="furniture.html">Furniture</a><br><br>
+                <a href="decoration.html">Decoration</a><br><br>
+            </div>
+            </div>
+        <div class="electronics">
+            <button class="ele-btn"><img src="electronicslogo.png" height="70px" width="70px"><br><a href="#">Electronics</a></button>
+            <div class="ele-btn-ddn"><br><br>
+                <a href="phone.html">Phone</a><br><br>
+                <a href="laptop.html">Laptop</a><br><br>
+                <a href="watches.html">Watches</a><br><br>
+            </div>
+            </div>
+            <div class="fashion">
+                <button class="fashion-btn"><img src="fashionlogo.png" height="70px" width="70px"><br><a href="#">Fashion</a></button>
+                <div class="fashion-btn-ddn"><br><br>
+                    <a href="mens.html">Men's</a><br><br>
+                    <a href="womens.html">Women's</a><br><br>
+                    <a href="accessories.html">Accessories</a><br><br>
+                </div>
+            </div>
+                <div class="beauty">
+                    <button class="bty-btn"><img src="beautylogo.png" height="70px" width="70px"><br><a href="#">Beauty</a></button>
+                    <div class="bty-btn-ddn"><br><br>
+                        <a href="makeup.html">Makeup</a><br><br>
+                        <a href="skincare.html">Skincare</a><br><br>
+                        <a href="haircare.html">Haircare</a><br><br>
+                        
+                        </div>
+                    </div>
+                   
+                </div>
+                <a href=""><img src="add_to_cart.png" class="cart-img" height="30px" alt=""></a>
+                </div>
+               
+                
+
+            <div class="search">
+               
+                <input type="text" name="serach-bar" id="Search-bar" placeholder="    Search..." style="height: 30px; width: 40%; margin-left:30%; margin-top: 20px;" >         
+                <button class="search-btn"><img src="search.png"  height="26px" width="30px"></button>
+                </div>
+                </div>
+                
+                <div class="slider-container">
+                    <div class="menu">
+                      <label for="slide-dot-1"></label>
+                      <label for="slide-dot-2"></label>
+                      <label for="slide-dot-3"></label>
+                    </div>
+                    <input id="slide-dot-1" type="radio" name="slides" checked>
+                    <div class="slide slide-1"></div>
+                    <input id="slide-dot-2" type="radio" name="slides">
+                    <div class="slide slide-2"></div>
+                    <input id="slide-dot-3" type="radio" name="slides">
+                    <div class="slide slide-3"></div>
+                  </div>
+
+
+            
+
+</body>
+</html>
